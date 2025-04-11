@@ -5,6 +5,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../AuthProvider'
 
+
 const Login = () => {
 
   const [username, setUsername] = useState('')
@@ -48,7 +49,7 @@ const Login = () => {
       <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-5 bg-light-dark p-5 rounded"> 
-              <h3 className="text-light text-center">Create an Account</h3>
+              <h3 className="text-light text-center">Login to your Account</h3>
               <form onSubmit={handleLogin} className="d-flex flex-column align-items-center">
                 <div className="mb-3 w-100">
                     <input type="text" className='form-control' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)}/>
@@ -58,7 +59,7 @@ const Login = () => {
                 </div>
                 {errors && <div className="text-danger">{errors}</div>}
                 {loading ? (<button className='btn btn-info' disabled> <FontAwesomeIcon icon={faSpinner} spin />Logging in...</button>) :
-                    (<button type='submit' className='btn btn-info'> Log in </button>)
+                    (<button type='submit' className='btn btn-info'> Login </button>)
                     }
               </form>
             </div>
