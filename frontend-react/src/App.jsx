@@ -25,6 +25,7 @@ function App() {
           <Route path="/register" element={<PublicRoute ><Register /> </PublicRoute> } />
           <Route path="/login" element={<PublicRoute><Login /> </PublicRoute>} />
           <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          <Route path='/predict' element={<PrivateRoute><Dashboard /></PrivateRoute>} />
         </Routes>
       < Footer />
       </BrowserRouter>
