@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'corsheaders',
     'rest_framework_simplejwt',
+    'stock_prediction_main',
 ]
 
 MIDDLEWARE = [
