@@ -1,7 +1,6 @@
 absl-py==2.2.2
 asgiref==3.8.1
 astunparse==1.6.3
-backports.zoneinfo==0.2.1
 beautifulsoup4==4.13.3
 cachetools==5.5.2
 certifi==2025.1.31
